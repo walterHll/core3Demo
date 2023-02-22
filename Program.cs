@@ -30,7 +30,7 @@ namespace core3Demo
         }
        public static RequestDelegate FooMiddleware(RequestDelegate next) => async context =>
         {
-            //999
+            //999888
             await context.Response.WriteAsync("Foo=>");
             await next(context);
         };
